@@ -9,17 +9,27 @@ string textC = Console.ReadLine();
 int numberC = Convert.ToInt32(textC);
 int max = Convert.ToInt32(textA);
 
-
-if (numberA >= numberB & numberA >= numberC)
-{
-    max = numberA;
-}
-if (numberB >= numberA & numberB >= numberC)
-{
+if (max<numberB)
     max = numberB;
-}
-if (numberC >= numberA & numberC >= numberB)
-{
-    max = numberC;
-}
+    if (max<numberC)
+    {
+     max = numberC;
+    }
+
+
 System.Console.WriteLine("Максимальным из предоставленных чисел является: " + max);
+
+
+// Ниже представлена первая рабочая попытка)
+// if (numberA >= numberB & numberA >= numberC)
+// {
+//     max = numberA;
+// }
+// if (numberB >= numberA & numberB >= numberC)
+// {
+//     max = numberB;
+// }
+// if (numberC >= numberA & numberC >= numberB)
+// {
+//     max = numberC;
+// }
