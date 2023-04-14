@@ -9,12 +9,12 @@ string textC = Console.ReadLine();
 int numberC = Convert.ToInt32(textC);
 int max = Convert.ToInt32(textA);
 
-if (max<numberB)
+if (max < numberB)
     max = numberB;
-    if (max<numberC)
-    {
-     max = numberC;
-    }
+if (max < numberC)
+{
+    max = numberC;
+}
 
 
 System.Console.WriteLine("Максимальным из предоставленных чисел является: " + max);
